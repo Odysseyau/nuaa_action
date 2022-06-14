@@ -124,7 +124,8 @@ def get_uid_id(cookies):
 def check(cookies, geo_api_info, id, uid):
     # Post的data，如果你是勇士可以尝试给这个打上注释，老谜语人了，看不懂ヾ(•ω•`)o
     data = {
-        'sfzhux': '0',
+        'gzczxq':'2',
+        'sfzhux': '1',
         'zhuxdz': '',
         'szgj': '',
         'szcs': '',
@@ -150,7 +151,7 @@ def check(cookies, geo_api_info, id, uid):
                  + ' ' + geo_api_info['addressComponent']['district'],
         'province': geo_api_info['addressComponent']['province'],
         'city': geo_api_info['addressComponent']['city'],
-        'sfzx': '0',
+        'sfzx': '1',
         'sfjcwhry': '0',
         'sfjchbry': '0',
         'sfcyglq': '0',
