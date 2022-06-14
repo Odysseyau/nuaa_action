@@ -138,7 +138,10 @@ def check(cookies, geo_api_info, id, uid):
         'sflqjkm': '4', #是否拥有苏康码 4是 0否
         'jkmys': '1',  #健康码颜色 1绿色 2黄色 3红色
         'sfjtgfxdq': '0',
-        'tw': '1',  #体温值，这里我设成1
+       #'tw': '1',  #体温值，这里我设成1
+        
+        'zrwjtw': '1', #体温值，这里我设成1
+        'jrzjtw': '1',
         'sfcxtz': '0',
         'sfjcbh': '0',
         'sfcxzysx': '0',
