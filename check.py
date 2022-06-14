@@ -124,20 +124,21 @@ def get_uid_id(cookies):
 def check(cookies, geo_api_info, id, uid):
     # Post的data，如果你是勇士可以尝试给这个打上注释，老谜语人了，看不懂ヾ(•ω•`)o
     data = {
-        'gzczxq':'2',
-        'sfzhux': '1',
+        'sfzx': '1',  #是否在校1是2否。
+        'gzczxq':'2', #工作常驻校区：1明故宫 2将军路 3天目湖
+        'sfzhux': '1', #是否住校 1是 0否
         'zhuxdz': '',
         'szgj': '',
         'szcs': '',
         'szgjcs': '',
-        'sfjwfh': '0',
+        'sfjwfh': '0', #今日是否在中高风险地区 1是 0否
         'sfyjsjwfh': '0',
         'sfjcjwfh': '0',
         'sflznjcjwfh': '0',
-        'sflqjkm': '4',
-        'jkmys': '1',
+        'sflqjkm': '4', #是否拥有苏康码 4是 0否
+        'jkmys': '1',  #健康码颜色 1绿色 2黄色 3红色
         'sfjtgfxdq': '0',
-        'tw': '2',
+        'tw': '1',  #体温值，这里我设成1
         'sfcxtz': '0',
         'sfjcbh': '0',
         'sfcxzysx': '0',
@@ -151,7 +152,6 @@ def check(cookies, geo_api_info, id, uid):
                  + ' ' + geo_api_info['addressComponent']['district'],
         'province': geo_api_info['addressComponent']['province'],
         'city': geo_api_info['addressComponent']['city'],
-        'sfzx': '1',
         'sfjcwhry': '0',
         'sfjchbry': '0',
         'sfcyglq': '0',
