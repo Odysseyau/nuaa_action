@@ -127,7 +127,8 @@ def check(cookies, geo_api_info, id, uid):
         'sfzx': '1',  #是否在校1是 0否。
         'gzczxq':'2', #工作常驻校区：1明故宫 2将军路 3天目湖
         'sfzhux': '1', #是否住校 1是 0否
-        'zhuxdz': '',
+        #'zhuxdz': '',
+        'njrddz': "南区35栋"
         'szgj': '',
         'szcs': '',
         'szgjcs': '',
